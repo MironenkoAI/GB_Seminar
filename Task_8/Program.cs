@@ -14,3 +14,7 @@ while(count <= n)
     }
     count = count + 1;
 }
+if(n < 1)
+{
+    Console.Write("Вы ввели число вне диапазона");
+}
