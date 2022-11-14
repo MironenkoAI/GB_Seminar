@@ -26,13 +26,15 @@ if(a > b)
     {
         Console.Write(a);
     }
+    else
+    {
+        Console.Write(c);
+    }
 }
-
 else if(b > c)
 {
     Console.Write(b);
 }
-
 else 
 {
     Console.Write(c);
