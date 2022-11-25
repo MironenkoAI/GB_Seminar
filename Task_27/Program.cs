@@ -9,6 +9,7 @@ int digit = Convert.ToInt32(Console.ReadLine());
 
 if (digit < 0)
     Console.WriteLine("Вы ввели отрицательное число. Начните сначала.");
+    //digit = -digit; для отрицательных
 
 else
 {
