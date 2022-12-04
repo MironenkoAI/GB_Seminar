@@ -20,16 +20,9 @@ for (int j = 0; j < numbers.GetLength(1); j++)
     double arithMean = 0;
     for (int i = 0; i < numbers.GetLength(0); i++)
     {
-        if (i == numbers.GetLength(0) - 1)
-        {
-            sum = sum + numbers[i, j];
-            arithMean = Math.Round((sum / numbers.GetLength(0)), 2);
-        }
-        else
-        {
-            sum = sum + numbers[i, j];
-        }
+        sum += numbers[i, j];
     }
+    arithMean = Math.Round((sum / numbers.GetLength(0)), 2);
     Console.WriteLine($"Среднее арифметическое столбца {j}: {arithMean}");
 }
 
