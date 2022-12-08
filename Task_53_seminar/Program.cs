@@ -23,28 +23,28 @@ WriteMatrix(nambers);
  строки на столбцы. В случае, если это невозможно, программа должна вывести
  сообщение для пользователя. */
 
-int rows = ReadInt("Введите количество строк: ");
-int columns = ReadInt("Введите количество столбцов: ");
-if (rows!=columns)
+int row = ReadInt("Введите количество строк: ");
+int column = ReadInt("Введите количество столбцов: ");
+if (row!=column)
 {
     Console.WriteLine("Операция невозможна!");
     return;
 }
-int[,] nambers = new int[rows, columns];
-FillMatrixRandomNumbers(nambers);
-WriteMatrix(nambers);
+int[,] numbers = new int[row, column];
+FillMatrixRandomNumbers(numbers);
+WriteMatrix(numbers);
 
-int[,] nambers2 = new int[rows, columns];
+int[,] numbers2 = new int[row, column];
 
 
-for (int i = 0; i < nambers.GetLength(0); i++)
+for (int i = 0; i < numbers.GetLength(0); i++)
     {
-        for (int j = 0; j < nambers.GetLength(1); j++)
+        for (int j = 0; j < numbers.GetLength(1); j++)
         {
-            nambers2[i,j] = nambers[j,i];
+            numbers2[i,j] = numbers[j,i];
         }
     }
-WriteMatrix(nambers2);
+WriteMatrix(numbers2);
 
 
 
