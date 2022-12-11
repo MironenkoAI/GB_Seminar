@@ -4,7 +4,7 @@ m = 2, n = 3 -> A(m,n) = 9
 m = 3, n = 2 -> A(m,n) = 29 */
 
 int M = 3;
-int N = 4;
+int N = 2;
 
 Console.WriteLine($"Значение функции Аккермана равно {Ackermann(M, N)}.");
 Console.WriteLine();
